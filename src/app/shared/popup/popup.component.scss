@@ -1,0 +1,49 @@
+::ng-deep {
+  .mat-dialog-container {
+    border-radius: 10px;
+    text-align: center;
+  }
+  .mat-dialog-container .ic-popup {
+    font-size: 200px;
+      &.success {
+        color: #00D950;
+      }
+      &.delete {
+        color: #CF271E;
+      }
+  }
+}
+
+.mat-input-container {
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0px 0px 0px;
+  outline: none;
+  overflow: hidden;
+  padding: 10px 0px 11px 0px;
+  position: relative;
+  text-transform: capitalize;
+  width: 100%;
+    &.done,
+    &.send {
+      background-color: #00D950;
+      border: solid 1px #00D950;
+    }
+    &.confirm {
+      background-color: #FFAF37;
+      border: solid 1px #FFAF37;
+    }
+    &.cancel {
+      background-color: transparent;
+      border: solid 1px #DFDFDE;
+      color: #7D7D7D;
+    }
+}

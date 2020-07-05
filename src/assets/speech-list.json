@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "content": "Speech 1",
+    "author": "Me",
+    "keywords": "speech",
+    "date": "Wed Apr 01 2020 00:00:00 GMT+0800 (Philippine Standard Time)"
+  }, {
+    "id": 2,
+    "content": "Speech 2",
+    "author": "Them",
+    "keywords": "speeches",
+    "date": "Wed Nov 02 2016 00:00:00 GMT+0800 (Philippine Standard Time)"
+  }, {
+    "id": 3,
+    "content": "Speech 3",
+    "author": "Them",
+    "keywords": "speeches",
+    "date": "Tue May 07 2019 00:00:00 GMT+0800 (Philippine Standard Time)"
+  }, {
+    "id": 4,
+    "content": "Speech 4",
+    "author": "Them",
+    "keywords": "speeches",
+    "date": "Sun Sep 09 2018 00:00:00 GMT+0800 (Philippine Standard Time)"
+  }, {
+    "id": 5,
+    "content": "Speech 5",
+    "author": "Them",
+    "keywords": "speeches",
+    "date": "Fri Jul 03 2020 00:00:00 GMT+0800 (Philippine Standard Time)"
+  }
+]

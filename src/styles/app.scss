@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "breakpoint";
+@import "config";
+@import "bootstrap/bootstrap";
+@import "custom/custom";
+@import "spinner";
+@import "transition";
+@import "transform";
+@import "utils";
+@import "rtl";
+@import "icons";
+@import "responsive";
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/material/theming';
+@include mat-core();
+//-------------------------------------------------------------------------------------------------------
+// DEFINING THE BASE THEMING
+//-------------------------------------------------------------------------------------------------------
+$primary: mat-palette($mat-blue-grey);
+$accent: mat-palette($mat-green);
+$warn: mat-palette($mat-red);
+$theme: mat-light-theme($primary, $accent, $warn);
+$dark-theme: mat-dark-theme($primary, $accent, $warn);
+@include angular-material-theme($theme);
+
+@media print {
+    .breadcrumb {
+        display: none !important;
+    }
+}
+
+body {
+  background-color: #fff;
+}
+
+textarea,
+input {
+   font-family: $font-family-base !important;
+ }

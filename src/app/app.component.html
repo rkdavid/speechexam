@@ -1,0 +1,19 @@
+<div class="content">
+
+  <div class="row no-gutters">
+    <div class="col-lg-12">
+      <ul class="nav-buttons">
+        <ng-container *ngFor="let menu of menus">
+          <ng-container *ngIf="menu.path">
+            <li routerLinkActive="active">
+              <a class="btn" routerLink="{{ menu.path }}">{{ menu.data.label }}</a>
+            </li>
+          </ng-container>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>

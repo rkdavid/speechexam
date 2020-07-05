@@ -1,0 +1,15 @@
+
+<ng-container *ngIf="data.type == 'share'; else popupBlock;">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email Address">
+  </mat-form-field>
+</ng-container>
+
+<ng-template #popupBlock>
+  <fa class="ic-popup {{ data.type }}" name="{{ data.type == 'success' ? 'check-circle' : 'times-circle' }}"></fa>
+  <p>{{ data.message }}</p>
+</ng-template>
+
+<ng-container *ngFor="let button of data.buttons">
+  <button type="button" class="{{ button }}" (click)="close(button)" mat-flat-button>{{ button }}</button>
+</ng-container>

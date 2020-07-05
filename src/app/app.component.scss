@@ -1,0 +1,65 @@
+@import "../styles/_breakpoint.scss";
+
+/************************************
+********** General styling **********
+************************************/
+a {
+  text-decoration: none;
+}
+
+
+/************************************
+********** Content styling **********
+************************************/
+
+.content {
+  margin: 0px auto 0px auto;
+  max-width: 1200px;
+  overflow: hidden;
+  padding: 0px 0px 50px 0px;
+}
+
+.content .nav-buttons {
+  display: table;
+  list-style-type: none;
+  margin: 60px 0px 50px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+.content .nav-buttons li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.content .nav-buttons li a {
+  background-color: #BE1E2D;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #fff;
+  display: block;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content .nav-buttons li.active a {
+  background-color: #CF271E;
+  border-radius: 0px;
+  color: #fff;
+  display: block;
+}
+
+/************************************
+*********** Media Queries ***********
+************************************/
+
+@include breakpoint('m-screen') {
+
+  .content .nav-buttons {
+    margin: 0px 0px 50px 0px;
+  }
+
+}

@@ -1,0 +1,36 @@
+[debug] [2020-07-05T09:16:16.817Z] ----------------------------------------------------------------------
+[debug] [2020-07-05T09:16:16.821Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kentd\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2020-07-05T09:16:16.821Z] CLI Version:   3.12.0
+[debug] [2020-07-05T09:16:16.821Z] Platform:      win32
+[debug] [2020-07-05T09:16:16.821Z] Node Version:  v6.11.0
+[debug] [2020-07-05T09:16:16.822Z] Time:          Sun Jul 05 2020 17:16:16 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2020-07-05T09:16:16.822Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-07-05T09:16:16.836Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2020-07-05T09:16:16.836Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kentd\OneDrive\Desktop\angular\speech-exam
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-05T09:16:37.911Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Sun Jul 05 2020 17:16:37 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2020-07-05T09:16:58.948Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at Object.exports._errnoException (util.js:1018:11)
+    at exports._exceptionWithHostPort (util.js:1041:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443

@@ -1,0 +1,114 @@
+@import "../../styles/_breakpoint.scss";
+
+/************************************
+********** General styling **********
+************************************/
+
+ul {
+  list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/************************************
+********** Content styling **********
+************************************/
+
+.content-row {
+  padding: 0px 20px 0px 20px;
+}
+
+.speech-list li {
+  margin: 0px 0px 8px 0px;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+}
+
+.speech-list li a {
+  display: block;
+    &:hover,
+    &.btn-primary {
+      color: #fff;
+    }
+}
+
+.btn-actions {
+  margin: 40px 0px 0px 0px;
+  text-align: right;
+}
+
+.btn-actions button {
+  color: #fff;
+  margin: 0px 15px 0px 15px;
+    &:first-child {
+      margin: 0px 15px 0px 0px;
+    }
+    &:last-child {
+      margin: 0px 0px 0px 15px;
+    }
+}
+
+/************************************
+********* Override styling **********
+************************************/
+
+::ng-deep {
+  .speech-list li .ic-btn {
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+  }
+  .speech-list li .ic-btn .fa {
+    display: block;
+  }
+}
+
+.mat-input-container {
+  width: 100%;
+}
+
+/************************************
+*********** Media Queries ***********
+************************************/
+
+@include breakpoint('xs-screen') {
+
+  .btn-actions button {
+    display: block;
+    margin: 0px 0px 10px 0px !important;
+    width: 100%;
+  }
+
+}
+
+@include breakpoint('s-screen') {
+
+  .speech-list li {
+    // width: 25%;
+  }
+
+  .form-row {
+    border: solid 1px #A0A0A0;
+    border-radius: 5px;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .btn-actions {
+    margin: 25px 0px 0px 0px;
+  }
+
+}
+
+@include breakpoint('m-screen') {
+
+  .content-row {
+    padding: 0px 15px 0px 15px;
+  }
+
+}
